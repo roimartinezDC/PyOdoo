@@ -4,7 +4,7 @@
 
   * Lo primero es crear un proyecto en un IDE, en este caso PyCharm.
   * Lo siguiente es crear un fichero ``docker-compose.yml``
-  * Para crear un contenedor odoo + postgresql:
+  * Para crear un contenedor odoo + postgresql, en el docker-compose:
       * Declarar un servicio de odoo, con un pull de la imagen oficial, 
         y mapeando el puerto en el que se va a levantar.
       * Declarar el servicio de la base de datos, con un pull de la imagen 
@@ -13,6 +13,8 @@
   * Para la configuración de odoo y el desarrollo de módulos, se mapea mediante
     un volumen, el directorio de los archivos de la bd en el entorno virual, a 
     un directorio en nuestro equipo.
+  * Una vez terminado el _docker-compose_, para levantar el repositorio haríamos 
+    un ``docker-compose.yml up``
 
 ### Acceso a la BD desde PyCharm
 
