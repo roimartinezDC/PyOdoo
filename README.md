@@ -61,4 +61,28 @@ Para acceder a la base de datos desde el IDE PyCharm:
      - `--db_host`: IP de la base de datos
      - `-r`: usuario para la bd
      - `-w`: contraseña para la bd
+
+   * Todas las modificaciones de los archivos del módulo se pueden hacer desde la interfaz de nuestro code, mediante la extensión de docker, o 
+     una mejor manera de hacerlo es desde un Visual Code dentro del propio entorno virual de Odoo.
+     
+      - Para esto iremos a la extensión de Docker, al servicio Odoo dentro del contenedor, y haremos click derecho > "Attach Visual Studio Code".
+        Esto nos abrirá un Code totalmente nuevo dentro del entorno de Odoo.
+        
+      - Aquí podremos trabajar con los archivos de forma nativa.
+    
+   * Ahora vamos a crear una tabla dentro del postgres de Odoo:
+   
+      - Lo primero es situarnos en un Visual Code dentro del Odoo, tal como expliqué anteriormente, una vez allí vamos a abrir la carpeta del módulo
+        en la ruta ``/mnt/``, en este caso ``/mnt/dam21``
+        
+      - En la carpeta del módulo, vamos a abrir un subdirectorio llamado ___models___, y dentro de este el archivo ___\_\_models\_\_.py___, aquí
+        dentro nos aparecerán unas líneas de código comentadas, las vamos a descomentar para que nos quede algo asi:
+        ![image](https://user-images.githubusercontent.com/91198492/225893544-e0e8118f-f03c-4610-bb89-b8744db17307.png)
+        como se puede ver, hay muchos atributos con diferentes funcionalidades para cada uno, en este caso solo vamos a crear la tabla, por lo que
+        solo le vamos a dar el nombre de la tabla.
+        
+      - Hecho esto ya estaría, ahora lo único que hay que hacer es actualizar el módulo de la manera que expliqué anteriormente y estaría listo.
+      
+      - No obstante, para que la tabla se cree, debemos tener el módulo instalado en nuestro Odoo.
+
    
