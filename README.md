@@ -45,5 +45,20 @@ Para acceder a la base de datos desde el IDE PyCharm:
  * Al hacer esto, si mediante la interfaz del Code nos desplazamos a la carpeta "Files"(es el directorio raiz de Odoo) dentro del odoo, 
    y vamos a _/mnt/extra-addons_, veremos que se ha creado una carpeta llamada "dam21", y dentro de esta hay una serie de documentos.
    
-    * 
+    * Dentro de estos documentos destacan los archivos ___\_\_init\_\_.py___ y ___\_\_manifest\_\_.py___, ___init.py___ simplemente
+      importa los archivos de los directorios _models_ y _controller_ y los lanza al inicarse el módulo.
+      
+    * ___\_\_manifest\_\_.py___, incluye toda la información del módulo que va a aparecer en la tienda de aplicaciones de Odoo, cuando vayamos
+      a instalar el módulo. Aquí podemos modificar cosas para personalizarlo a nuestro gusto.
+      
+  * Si hacemos cambios en algún archivo dentro del repositorio del módulo, tendremos que hacer que este se actualice para que se puedan ver 
+    reflejados los cambios en Odoo. Esto se hace mediante el siguiente comando:
+    
+    `odoo -u dam21 -d odoo --db_host=db -r odoo -w odoo`
+    
+     - `-u`: update
+     - `-d`: nombre de la base de datos
+     - `--db_host`: IP de la base de datos
+     - `-r`: usuario para la bd
+     - `-w`: contraseña para la bd
    
