@@ -57,6 +57,7 @@ Para acceder a la base de datos desde el IDE PyCharm:
     `odoo -u dam21 -d odoo --db_host=db -r odoo -w odoo`
     
      - `-u`: update
+     - `dam21`: nombre del módulo
      - `-d`: nombre de la base de datos
      - `--db_host`: IP de la base de datos
      - `-r`: usuario para la bd
