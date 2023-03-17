@@ -77,7 +77,9 @@ Para acceder a la base de datos desde el IDE PyCharm:
         
       - En la carpeta del módulo, vamos a abrir un subdirectorio llamado ___models___, y dentro de este el archivo ___\_\_models\_\_.py___, aquí
         dentro nos aparecerán unas líneas de código comentadas, las vamos a descomentar para que nos quede algo asi:
+        
         ![image](https://user-images.githubusercontent.com/91198492/225893544-e0e8118f-f03c-4610-bb89-b8744db17307.png)
+        
         como se puede ver, hay muchos atributos con diferentes funcionalidades para cada uno, en este caso solo vamos a crear la tabla, por lo que
         solo le vamos a dar el nombre de la tabla.
         
