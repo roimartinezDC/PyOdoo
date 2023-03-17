@@ -85,6 +85,6 @@ Para acceder a la base de datos desde el IDE PyCharm:
         
       - Hecho esto ya estaría, ahora lo único que hay que hacer es actualizar el módulo de la manera que expliqué anteriormente y estaría listo.
       
-      - No obstante, para que la tabla se cree, debemos tener el módulo instalado en nuestro Odoo.
+      - No obstante, para que la tabla se cree, debemos tener el módulo activado en nuestro Odoo.
 
    
